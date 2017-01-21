@@ -1,0 +1,16 @@
+PODS:
+  - UMengUShare/Core (6.2.2):
+    - UMengUShare/Network
+  - UMengUShare/Network (6.2.2)
+  - UMengUShare/UI (6.2.2):
+    - UMengUShare/Core
+
+DEPENDENCIES:
+  - UMengUShare/UI
+
+SPEC CHECKSUMS:
+  UMengUShare: fc0a98b8d5297632e82874318fd72a10d17da228
+
+PODFILE CHECKSUM: a331e90235a2dec36d667a67b3a845a7e199161d
+
+COCOAPODS: 1.1.1

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9AD27CBBF27354C72A221D5D /* Pods_Git.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7128E672066C3DD1A803278A /* Pods_Git.framework */; };
 		E1F608561E33C1A800148FA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F608551E33C1A800148FA5 /* AppDelegate.swift */; };
 		E1F608581E33C1A800148FA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F608571E33C1A800148FA5 /* ViewController.swift */; };
 		E1F6085B1E33C1A800148FA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1F608591E33C1A800148FA5 /* Main.storyboard */; };
@@ -34,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		709CB9C8FF6C04D39C4E450C /* Pods-Git.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Git.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Git/Pods-Git.debug.xcconfig"; sourceTree = "<group>"; };
+		7128E672066C3DD1A803278A /* Pods_Git.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Git.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF3058FA9036D81A0A8628B5 /* Pods-Git.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Git.release.xcconfig"; path = "Pods/Target Support Files/Pods-Git/Pods-Git.release.xcconfig"; sourceTree = "<group>"; };
 		E1F608521E33C1A800148FA5 /* Git.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Git.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1F608551E33C1A800148FA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1F608571E33C1A800148FA5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AD27CBBF27354C72A221D5D /* Pods_Git.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A97F8FF002BDCAD351AC76A9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				709CB9C8FF6C04D39C4E450C /* Pods-Git.debug.xcconfig */,
+				BF3058FA9036D81A0A8628B5 /* Pods-Git.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BB6684C7E5D3771A085E5971 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7128E672066C3DD1A803278A /* Pods_Git.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E1F608491E33C1A800148FA5 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +103,8 @@
 				E1F608691E33C1A800148FA5 /* GitTests */,
 				E1F608741E33C1A900148FA5 /* GitUITests */,
 				E1F608531E33C1A800148FA5 /* Products */,
+				A97F8FF002BDCAD351AC76A9 /* Pods */,
+				BB6684C7E5D3771A085E5971 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1F6087A1E33C1A900148FA5 /* Build configuration list for PBXNativeTarget "Git" */;
 			buildPhases = (
+				2492FFDB85D1591C41BA89F8 /* [CP] Check Pods Manifest.lock */,
 				E1F6084E1E33C1A800148FA5 /* Sources */,
 				E1F6084F1E33C1A800148FA5 /* Frameworks */,
 				E1F608501E33C1A800148FA5 /* Resources */,
+				49D4967EB66123907290FAD2 /* [CP] Embed Pods Frameworks */,
+				CF93735B0E25B70EEF574C5E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +280,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2492FFDB85D1591C41BA89F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		49D4967EB66123907290FAD2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Git/Pods-Git-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF93735B0E25B70EEF574C5E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Git/Pods-Git-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E1F6084E1E33C1A800148FA5 /* Sources */ = {
@@ -410,6 +485,7 @@
 		};
 		E1F6087B1E33C1A900148FA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 709CB9C8FF6C04D39C4E450C /* Pods-Git.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Git/Info.plist;
@@ -422,6 +498,7 @@
 		};
 		E1F6087C1E33C1A900148FA5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF3058FA9036D81A0A8628B5 /* Pods-Git.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Git/Info.plist;
